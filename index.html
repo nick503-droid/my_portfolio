@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    
+</head>
+<body>
+
+    <!-- ==============================================
+         SIDEBAR FIJO DE CONTACTOS (izquierda)
+         Solo visible en pantallas grandes
+         ============================================== -->
+    <div class="contacts-sidebar hidden lg:block">
+        <div class="text-center mb-6">
+            <p class="text-gray-400 text-sm font-semibold tracking-wider mb-4">CONTACTS</p>
+            
+        </div>
+        
+        <div class="flex flex-col gap-6">
+            <!-- GitHub -->
+            <a href="https://github.com/nick503-droid" target="_blank" 
+               class="text-gray-400 hover:text-white transition text-2xl" 
+               title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/walter-ramirez-b70288298/" target="_blank" 
+               class="text-gray-400 hover:text-white transition text-2xl" 
+               title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            
+            <!-- Email -->
+            <a href="mailto:walterrd503@gmail.com" 
+               class="text-gray-400 hover:text-white transition text-2xl" 
+               title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            
+            
+            
+            <!-- Puedes añadir más redes aquí en el futuro -->
+        </div>
+    </div>
+
+    <!-- ==============================================
+         SECCIÓN: HERO / PRESENTACIÓN
+         ============================================== -->
+    <section id="home" class="min-h-screen flex items-center fade-in">
+        <div class="container mx-auto px-6 lg:px-20 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- LADO IZQUIERDO: Información personal -->
+                <div>
+                    <p class="text-gray-400 text-lg mb-4">Hello, I'm</p>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6">Walter Ramirez</h1>
+                    <h2 class="text-2xl md:text-3xl text-gray-400 mb-6">Software Developer</h2>
+                    
+                    <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                        Passionate about creating efficient and scalable software solutions. 
+                        I specialize in full-stack development with experience in modern web 
+                        technologies and database management.
+                    </p>
+                    
+                    <div class="flex items-center gap-4 text-gray-400 mb-8">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>El Salvador</span>
+                        
+                        <span class="text-gray-600">|</span>
+
+                        <i class="fas fa-envelope"></i>
+                        <span>walterrd503@gmail.com</span>
+                        
+                        <span class="text-gray-600">|</span>
+                        
+                        <!-- Botón Descargar CV -->
+                        <a href="./cv/CV Walter Ramirez.pdf" download 
+                           class="flex items-center gap-2 bg-white text-black px-6 py-2 rounded-lg font-semibold hover:bg-gray-200 transition">
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </a>
+                    </div>
+                    
+                    <!-- Contactos visibles en móvil -->
+                    <div class="flex gap-6 lg:hidden">
+                        <a href="https://github.com/nick503-droid" target="_blank" 
+                           class="text-gray-400 hover:text-white transition text-2xl">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" 
+                           class="text-gray-400 hover:text-white transition text-2xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:your.email@example.com" 
+                           class="text-gray-400 hover:text-white transition text-2xl">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- LADO DERECHO: Foto de perfil -->
+                <div class="flex justify-center lg:justify-end">
+                    <div class="relative">
+                        <div class="w-85 h-85 rounded-full overflow-hidden border-4 border-gray-700">
+                            <img src="./images/Gemini_Generated_Image_zg4ehhzg4ehhzg4e.png" 
+                                 alt="Profile" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Separador de sección -->
+    <div class="section-divider h-px"></div>
+
+    <!-- ==============================================
+         SECCIÓN: ABOUT ME (Pequeña info sobre mí)
+         ============================================== -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-6 lg:px-20 max-w-5xl">
+            <h2 class="text-4xl font-bold text-center mb-4">About Me</h2>
+            <div class="w-20 h-1 bg-white mx-auto mb-12"></div>
+            
+            <div class="text-gray-300 text-lg leading-relaxed space-y-4">
+                <p>
+                    I'm a Software Development Technician with hands-on experience in building 
+                    web applications. I'm passionate about automating 
+                    processes and continuously learning new technologies to optimize solutions.
+                </p>
+                <p>
+                    My goal is to contribute to innovative projects where I can apply my knowledge 
+                    in programming, databases, and full-stack development, while continuing to grow 
+                    professionally in the technology field.
+                </p>
+                <p>
+                    I thrive in collaborative environments and enjoy tackling complex challenges 
+                    that push me to think creatively and deliver high-quality results.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separador de sección -->
+    <div class="section-divider h-px"></div>
+
+    <!-- ==============================================
+         SECCIÓN: MY EXPERIENCE (antes de proyectos)
+         ============================================== -->
+    
+
+    <!-- ==============================================
+         SECCIÓN: FEATURED PROJECTS
+         ============================================== -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-6 lg:px-20">
+            <h2 class="text-4xl font-bold text-center mb-4">Featured Projects</h2>
+            <div class="w-20 h-1 bg-white mx-auto mb-12"></div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Proyecto 1 -->
+                <div class="project-card rounded-lg overflow-hidden cursor-pointer" 
+                     onclick="openModal('modal1')">
+                    <img src="./images/Inventory Management System.jpg" alt="Project 1" 
+                         class="w-full h-48 object-cover">
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Inventory Management System</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Web application to control store inventory with real-time product 
+                            registration, sales tracking, and reporting.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">PHP</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">MySQL</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">Bootstrap</span>
+                        </div>
+                        
+                        <p class="text-gray-500 text-sm">View details</p>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="project-card rounded-lg overflow-hidden cursor-pointer" 
+                     onclick="openModal('modal2')">
+                    <img src="./images/RESTful Task API.jpg" alt="Project 2" 
+                         class="w-full h-48 object-cover">
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">RESTful Task API</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            API developed in Node.js for task management with JWT authentication 
+                            and complete CRUD operations.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">Node.js</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">Express</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">MongoDB</span>
+                        </div>
+                        
+                        <p class="text-gray-500 text-sm">View details</p>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="project-card rounded-lg overflow-hidden cursor-pointer" 
+                     onclick="openModal('modal3')">
+                    <img src="./images/Sales Dashboard.png" alt="Project 3" 
+                         class="w-full h-48 object-cover">
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Sales Dashboard</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Interactive dashboard with real-time charts to visualize monthly 
+                            and annual sales statistics.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">React</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">Chart.js</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">Tailwind</span>
+                        </div>
+                        
+                        <p class="text-gray-500 text-sm">View details</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modales para cada proyecto -->
+    
+    <!-- Modal Proyecto 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content p-8">
+            <div class="flex justify-between items-start mb-6">
+                <h2 class="text-3xl font-bold">Inventory Management System</h2>
+                <button onclick="closeModal('modal1')" class="text-gray-400 hover:text-white text-2xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <img src="https://via.placeholder.com/600x300" alt="Project 1" 
+                 class="w-full rounded-lg mb-6">
+            
+            <!-- Tipo de proyecto -->
+            <div class="mb-6">
+                <span class="inline-block bg-blue-900 text-blue-200 px-4 py-2 rounded-lg font-semibold">
+                    Freelance Project
+                </span>
+            </div>
+            
+            <!-- Descripción completa -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-3">Project Description</h3>
+                <p class="text-gray-300 leading-relaxed">
+                    Developed a comprehensive inventory management system for a local retail store. 
+                    The application allows real-time tracking of products, automated alerts for low stock, 
+                    and generates detailed sales reports. Implemented user authentication and role-based 
+                    access control.
+                </p>
+            </div>
+            
+            <!-- Acciones realizadas -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-3">My Actions & Responsibilities</h3>
+                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                    <li>Designed and implemented the database schema with MySQL</li>
+                    <li>Developed the backend API using PHP with MVC architecture</li>
+                    <li>Created responsive frontend interfaces with Bootstrap</li>
+                    <li>Implemented user authentication and authorization system</li>
+                    <li>Generated automated PDF reports for sales analysis</li>
+                    <li>Deployed and maintained the application on Linux server</li>
+                </ul>
+            </div>
+            
+            <!-- Tecnologías -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-3">Technologies Used</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-4 py-2 bg-gray-800 rounded-lg">PHP</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-lg">MySQL</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-lg">Bootstrap</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-lg">jQuery</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-lg">Apache</span>
+                </div>
+            </div>
+            
+            <!-- Enlaces -->
+            <div class="flex gap-4">
+                <a href="https://github.com/yourusername/project" target="_blank" 
+                   class="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+                    <i class="fab fa-github"></i> View Code
+                </a>
+                <a href="#" target="_blank" 
+                   class="flex items-center gap-2 bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Proyecto 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content p-8">
+            <div class="flex justify-between items-start mb-6">
+                <h2 class="text-3xl font-bold">RESTful Task API</h2>
+                <button onclick="closeModal('modal2')" class="text-gray-400 hover:text-white text-2xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <img src="https://via.placeholder.com/600x300" alt="Project 2" 
+                 class="w-full rounded-lg mb-6">
+            
+            <div class="mb-6">
+                <span class="inline-block bg-green-900 text-green-200 px-4 py-2 rounded-lg font-semibold">
+                    Personal Project
+                </span>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-3">Project Description</h3>
+                <p class="text-gray-300 leading-relaxed">
+                    Built a RESTful API for task management with complete CRUD functionality. 
+                    Implemented JWT authentication for secure access and MongoDB for flexible 
+                    data storage. The API supports user registration, login, and personalized 
+                    task management.
+                </p>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-3">My Actions & Responsibilities</h3>
+                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                    <li>Designed RESTful API architecture following best practices</li>
+                    <li>Implemented JWT-based authentication and authorization</li>
+                    <li>Created middleware for request validation and error handling</li>
+                    <li>Developed comprehensive API documentation with Swagger</li>
+                    <li>Wrote unit tests to ensure code reliability</li>
+                    <li>Deployed API on cloud platform with CI/CD pipeline</li>
+                </ul>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-3">Technologies Used</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-4 py-2 bg-gray-800 rounded-lg">Node.js</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-lg">Express</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-lg">MongoDB</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-lg">JWT</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-lg">Mongoose</span>
+                </div>
+            </div>
+            
+            <div class="flex gap-4">
+                <a href="https://github.com/yourusername/project" target="_blank" 
+                   class="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+                    <i class="fab fa-github"></i> View Code
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Proyecto 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content p-8">
+            <div class="flex justify-between items-start mb-6">
+                <h2 class="text-3xl font-bold">Sales Dashboard</h2>
+                <button onclick="closeModal('modal3')" class="text-gray-400 hover:text-white text-2xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <img src="https://via.placeholder.com/600x300" alt="Project 3" 
+                 class="w-full rounded-lg mb-6">
+            
+            <div class="mb-6">
+                <span class="inline-block bg-purple-900 text-purple-200 px-4 py-2 rounded-lg font-semibold">
+                    Academic Project
+                </span>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-3">Project Description</h3>
+                <p class="text-gray-300 leading-relaxed">
+                    Created an interactive sales dashboard with dynamic charts and real-time 
+                    data visualization. The application provides comprehensive insights into 
+                    sales trends, top-selling products, and revenue analytics.
+                </p>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-3">My Actions & Responsibilities</h3>
+                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                    <li>Developed frontend components using React hooks</li>
+                    <li>Integrated Chart.js for interactive data visualizations</li>
+                    <li>Implemented responsive design with Tailwind CSS</li>
+                    <li>Created data fetching logic with API integration</li>
+                    <li>Optimized component rendering for better performance</li>
+                    <li>Added export functionality for reports (PDF/Excel)</li>
+                </ul>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-3">Technologies Used</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-4 py-2 bg-gray-800 rounded-lg">React</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-lg">Chart.js</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-lg">Tailwind CSS</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-lg">Axios</span>
+                </div>
+            </div>
+            
+            <div class="flex gap-4">
+                <a href="https://github.com/yourusername/project" target="_blank" 
+                   class="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+                    <i class="fab fa-github"></i> View Code
+                </a>
+                <a href="#" target="_blank" 
+                   class="flex items-center gap-2 bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Separador de sección -->
+    <div class="section-divider h-px"></div>
+
+    <!-- ==============================================
+         SECCIÓN: TECHNICAL SKILLS
+         ============================================== -->
+    <section id="skills" class="py-20">
+        <div class="container mx-auto px-6 lg:px-20">
+            <h2 class="text-4xl font-bold text-center mb-4">Technical Skills</h2>
+            <div class="w-20 h-1 bg-white mx-auto mb-12"></div>
+            
+            <!-- Lenguajes de Programación -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-8 text-center">Programming Languages</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <i class="fab fa-php text-4xl text-gray-300"></i>
+                        </div>
+                        <p class="font-semibold mb-1">PHP</p>
+                        <p class="text-gray-400 text-sm">Intermediate</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <i class="fab fa-js text-4xl text-gray-300"></i>
+                        </div>
+                        <p class="font-semibold mb-1">JavaScript</p>
+                        <p class="text-gray-400 text-sm">Intermediate</p>
+                    </div>
+                    
+                    
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <i class="fab fa-python text-4xl text-gray-300"></i>
+                        </div>
+                        <p class="font-semibold mb-1">Python</p>
+                        <p class="text-gray-400 text-sm">Intermediate</p>
+                    </div>
+                    
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <i class="fas fa-database text-4xl text-gray-300"></i>
+                        </div>
+                        <p class="font-semibold mb-1">SQL</p>
+                        <p class="text-gray-400 text-sm">Intermediate</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <!-- Frameworks & Libraries -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-8 text-center">Frameworks & Libraries</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <i class="fab fa-laravel text-4xl text-gray-300"></i>
+                        </div>
+                        <p class="font-semibold mb-1">Laravel</p>
+                        <p class="text-gray-400 text-sm">Intermediate</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <i class="fab fa-react text-4xl text-gray-300"></i>
+                        </div>
+                        <p class="font-semibold mb-1">React</p>
+                        <p class="text-gray-400 text-sm">Basic</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <i class="fab fa-node text-4xl text-gray-300"></i>
+                        </div>
+                        <p class="font-semibold mb-1">Node.js</p>
+                        <p class="text-gray-400 text-sm">Basic</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <i class="fab fa-bootstrap text-4xl text-gray-300"></i>
+                        </div>
+                        <p class="font-semibold mb-1">Bootstrap</p>
+                        <p class="text-gray-400 text-sm">Intermediate</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <i class="fas fa-wind text-4xl text-gray-300"></i>
+                        </div>
+                        <p class="font-semibold mb-1">Tailwind CSS</p>
+                        <p class="text-gray-400 text-sm">Intermediate</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <i class="fab fa-vuejs text-4xl text-gray-300"></i>
+                        </div>
+                        <p class="font-semibold mb-1">Vue.js</p>
+                        <p class="text-gray-400 text-sm">Intermediate</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <!-- Databases -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-8 text-center">Databases</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-items-center">
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <i class="fas fa-database text-4xl text-gray-300"></i>
+                        </div>
+                        <p class="font-semibold mb-1">MySQL</p>
+                        <p class="text-gray-400 text-sm">Intermediate</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <i class="fas fa-database text-4xl text-gray-300"></i>
+                        </div>
+                        <p class="font-semibold mb-1">SQL Server</p>
+                        <p class="text-gray-400 text-sm">Intermediate</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <i class="fas fa-leaf text-4xl text-gray-300"></i>
+                        </div>
+                        <p class="font-semibold mb-1">MongoDB</p>
+                        <p class="text-gray-400 text-sm">Basic</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <i class="fas fa-database text-4xl text-gray-300"></i>
+                        </div>
+                        <p class="font-semibold mb-1">PostgreSQL</p>
+                        <p class="text-gray-400 text-sm">Basic</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <!-- Tools & Environments -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-8 text-center">Tools & Environments</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <i class="fab fa-git-alt text-4xl text-gray-300"></i>
+                        </div>
+                        <p class="font-semibold mb-1">Git</p>
+                        <p class="text-gray-400 text-sm">Advanced</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <i class="fab fa-github text-4xl text-gray-300"></i>
+                        </div>
+                        <p class="font-semibold mb-1">GitHub</p>
+                        <p class="text-gray-400 text-sm">Advanced</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <i class="fab fa-linux text-4xl text-gray-300"></i>
+                        </div>
+                        <p class="font-semibold mb-1">Linux</p>
+                        <p class="text-gray-400 text-sm">Intermediate</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <i class="fab fa-docker text-4xl text-gray-300"></i>
+                        </div>
+                        <p class="font-semibold mb-1">Docker</p>
+                        <p class="text-gray-400 text-sm">Basic</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <i class="fas fa-code text-4xl text-gray-300"></i>
+                        </div>
+                        <p class="font-semibold mb-1">VS Code</p>
+                        <p class="text-gray-400 text-sm">Advanced</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <i class="fas fa-terminal text-4xl text-gray-300"></i>
+                        </div>
+                        <p class="font-semibold mb-1">Terminal</p>
+                        <p class="text-gray-400 text-sm">Intermediate</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Separador de sección -->
+    <div class="section-divider h-px"></div>
+
+    <!-- ==============================================
+         SECCIÓN: EDUCATION
+         ============================================== -->
+    <section id="education" class="py-20 bg-gradient-to-br from-gray-900 to-black">
+        <div class="container mx-auto px-6 lg:px-20 max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-4">Education</h2>
+            <div class="w-20 h-1 bg-white mx-auto mb-12"></div>
+            
+            <div class="space-y-8">
+                
+                <!-- Universidad -->
+                <div class="bg-black border border-gray-800 rounded-lg p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="text-white text-3xl mt-1">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold mb-2">Software Development Technician</h3>
+                            <p class="text-gray-400 mb-2">
+                                <i class="fas fa-university mr-2"></i>
+                                ITCA-FEPADE — Santa Tecla, La Libertad
+                            </p>
+                            <p class="text-gray-500 text-sm mb-3">
+                                <i class="far fa-calendar mr-2"></i>
+                                2024 - 2025
+                            </p>
+                            <p class="text-gray-300">
+                                Comprehensive training in web development, database management, and server administration.
+                                Gained hands-on experience through practical projects and internships.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bachillerato -->
+                <div class="bg-black border border-gray-800 rounded-lg p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="text-white text-3xl mt-1">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold mb-2">High School Diploma</h3>
+                            <p class="text-gray-400 mb-2">
+                                <i class="fas fa-school mr-2"></i>
+                                National Institute Heber Remberto Trujillo Días
+                            </p>
+                            <p class="text-gray-500 text-sm mb-3">
+                                <i class="far fa-calendar mr-2"></i>
+                               2021 - 2023
+                            </p>
+                            <p class="text-gray-300">
+                                I completed my high school studies with an focus on "Technical Accounting Option".
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Separador de sección -->
+    <div class="section-divider h-px"></div>
+
+    <!-- ==============================================
+         SECCIÓN: CERTIFICATIONS / COURSES
+         ============================================== -->
+    <section id="certifications" class="py-20">
+        <div class="container mx-auto px-6 lg:px-20 max-w-5xl">
+            <h2 class="text-4xl font-bold text-center mb-4">Certifications & Courses</h2>
+            <div class="w-20 h-1 bg-white mx-auto mb-12"></div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                
+                <!-- Certificación 1 -->
+                <div class="bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-lg p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="text-white text-3xl">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold mb-2">Introduction to Networks</h3>
+                            <p class="text-gray-400 text-sm mb-2">
+                                Cisco Networking Academy
+                            </p>
+                            <p class="text-gray-500 text-xs mb-4">2024</p>
+                            
+                            <!-- Link del certificado -->
+                            <a href="https://www.yourCertificateLink.com" target="_blank" 
+                               class="inline-flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 transition">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certificación 2 -->
+                <div class="bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-lg p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="text-white text-3xl">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold mb-2">Full Stack Web Development</h3>
+                            <p class="text-gray-400 text-sm mb-2">
+                                Udemy
+                            </p>
+                            <p class="text-gray-500 text-xs mb-4">2023</p>
+                            
+                            <a href="https://www.udemy.com/certificate/YOUR_CERT_ID/" target="_blank" 
+                               class="inline-flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 transition">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certificación 3 -->
+                <div class="bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-lg p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="text-white text-3xl">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold mb-2">JavaScript Algorithms and Data Structures</h3>
+                            <p class="text-gray-400 text-sm mb-2">
+                                freeCodeCamp
+                            </p>
+                            <p class="text-gray-500 text-xs mb-4">2023</p>
+                            
+                            <a href="https://www.freecodecamp.org/certification/yourUsername/javascript-algorithms-and-data-structures" target="_blank" 
+                               class="inline-flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 transition">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certificación 4 -->
+                <div class="bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-lg p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="text-white text-3xl">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold mb-2">React - The Complete Guide</h3>
+                            <p class="text-gray-400 text-sm mb-2">
+                                Udemy
+                            </p>
+                            <p class="text-gray-500 text-xs mb-4">2024</p>
+                            
+                            <a href="https://www.udemy.com/certificate/YOUR_CERT_ID/" target="_blank" 
+                               class="inline-flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 transition">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         FOOTER
+         ============================================== -->
+    <footer class="bg-black border-t border-gray-800 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400 mb-2">© 2025 Walter Ramirez. All rights reserved.</p>
+            <p class="text-gray-500 text-sm">Let’s connect — open to collaboration and new opportunities.</p>
+
+            
+            <!-- Enlaces adicionales en footer para móviles -->
+            <div class="flex justify-center gap-6 mt-6 lg:hidden">
+                <a href="https://github.com/yourusername" target="_blank" 
+                   class="text-gray-400 hover:text-white transition text-xl">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" 
+                   class="text-gray-400 hover:text-white transition text-xl">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:your.email@example.com" 
+                   class="text-gray-400 hover:text-white transition text-xl">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
