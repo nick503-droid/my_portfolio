@@ -221,24 +221,25 @@
 
                 <!-- Proyecto 3 -->
                 <div class="project-card rounded-lg overflow-hidden cursor-pointer" 
-                     onclick="openModal('modal3')">
-                    <img src="./images/In progress.png" alt="Project 3" 
-                         class="w-full h-48 object-cover">
+                    onclick="openModal('modal3')">
+                    <img src="./images/recicladora.png" alt="Recycling System" 
+                        class="w-full h-48 object-cover">
                     
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Business Management System (In progress)</h3>
+                        <h3 class="text-xl font-bold mb-2">Recycling Center ERP</h3>
                         <p class="text-gray-400 text-sm mb-4">
-                            Full-stack web application designed to manage employees, products, and sales operations,
-                            including real-time reporting and analytics dashboards.
+                            Comprehensive Full-Stack management system for a recycling company. 
+                            It handles sales, truck logistics, inventory, and financial reconciliation.
                         </p>
                         
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">Vue.js</span>
-                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">Laravel</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">Vue.js 3</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">Laravel 11</span>
                             <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">MySQL</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">Tailwind CSS</span>
                         </div>
                         
-                        <p class="text-gray-500 text-sm">View details (In Process)</p>
+                        <p class="text-gray-500 text-sm">View details</p>
                     </div>
                 </div>
 
@@ -379,67 +380,65 @@
         </div>
     </div>
 
-    <!-- Modal Proyecto 3 -->
-   <!-- <div id="modal3" class="modal">
-        <div class="modal-content p-8">
-            <div class="flex justify-between items-start mb-6">
-                <h2 class="text-3xl font-bold">Business Management System (In progress)</h2>
-                <button onclick="closeModal('modal3')" class="text-gray-400 hover:text-white text-2xl">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            
-            <img src="https://via.placeholder.com/600x300" alt="Project 3" 
-                 class="w-full rounded-lg mb-6">
-            
-            <div class="mb-6">
-                <span class="inline-block bg-blue-900 text-blue-200 px-4 py-2 rounded-lg font-semibold">
-                    Free-Lance
-                </span>
-            </div>
-            
-            <div class="mb-6">
-                <h3 class="text-xl font-semibold mb-3">Project Description</h3>
-                <p class="text-gray-300 leading-relaxed">
-                    Created an interactive sales dashboard with dynamic charts and real-time 
-                    data visualization. The application provides comprehensive insights into 
-                    sales trends, top-selling products, and revenue analytics.
-                </p>
-            </div>
-            
-            <div class="mb-6">
-                <h3 class="text-xl font-semibold mb-3">My Actions & Responsibilities</h3>
-                <ul class="list-disc list-inside text-gray-300 space-y-2">
-                    <li>Designed and implemented relational database schema and RESTful API architecture in Laravel</li>
-                    <li>Developed frontend interface with Vue.js and Tailwind CSS, including dynamic tables, modals, and report views</li>
-                    <li>Integrated authentication and role-based authorization using Laravel Sanctum</li>
-                    <li>Configured CRUD operations for employees, products, and sales with validation and error handling</li>
-                </ul>
-            </div>
-            
-            <div class="mb-6">
-                <h3 class="text-xl font-semibold mb-3">Technologies Used</h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-4 py-2 bg-gray-800 rounded-lg">Laravel</span>
-                    <span class="px-4 py-2 bg-gray-800 rounded-lg">Vue.js</span>
-                    <span class="px-4 py-2 bg-gray-800 rounded-lg">Tailwind CSS</span>
-                    <span class="px-4 py-2 bg-gray-800 rounded-lg">Axios</span>
-                    <span class="px-4 py-2 bg-gray-800 rounded-lg">MySQL</span>
+            <!-- Modal Proyecto 3 -->
+        <div id="modal3" class="modal">
+            <div class="modal-content p-8">
+                <div class="flex justify-between items-start mb-6">
+                    <h2 class="text-3xl font-bold">Recycling Center ERP</h2>
+                    <button onclick="closeModal('modal3')" class="text-gray-400 hover:text-white text-2xl">
+                        <i class="fas fa-times"></i>
+                    </button>
                 </div>
-            </div>
-            
-            <div class="flex gap-4">
-                <a href="https://github.com/yourusername/project" target="_blank" 
-                   class="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
-                    <i class="fab fa-github"></i> View Code
-                </a>
-                <a href="#" target="_blank" 
-                   class="flex items-center gap-2 bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition">
-                    <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
+                
+                <img src="./images/recicladora.png" alt="Recycling System Dashboard" 
+                    class="w-full rounded-lg mb-6">
+                
+                <div class="mb-6">
+                    <span class="inline-block bg-blue-900 text-blue-200 px-4 py-2 rounded-lg font-semibold">
+                        Freelance Project
+                    </span>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold mb-3">Project Description</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Developed a comprehensive custom ERP solution to digitize the operations of "Recicladora Fernández". 
+                        The system replaced manual tracking with digital material entry, dynamic cost calculations, 
+                        and a critical "Daily Cash Closing" module that detects financial variances in real-time.
+                    </p>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold mb-3">Key Contributions</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>Architected a robust REST API using <strong>Laravel 11</strong> and a reactive <strong>Vue 3</strong> frontend.</li>
+                        <li>Engineered the "Cash Reconciliation" algorithm to compare system sales vs. physical cash.</li>
+                        <li>Implemented secure Role-Based Access Control (RBAC) to separate Admin and Accountant privileges.</li>
+                        <li>Integrated automated PDF invoice generation and Excel data exports.</li>
+                        <li>Managed production environment, database, and deployment via <strong>Railway.app</strong>.</li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold mb-3">Technologies Used</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-gray-800 rounded-lg">Vue.js 3</span>
+                        <span class="px-4 py-2 bg-gray-800 rounded-lg">Laravel 11</span>
+                        <span class="px-4 py-2 bg-gray-800 rounded-lg">Tailwind CSS</span>
+                        <span class="px-4 py-2 bg-gray-800 rounded-lg">MySQL</span>
+                        <span class="px-4 py-2 bg-gray-800 rounded-lg">Vuetify</span>
+                        <span class="px-4 py-2 bg-gray-800 rounded-lg">Railway</span>
+                        <span class="px-4 py-2 bg-gray-800 rounded-lg">Axios</span>
+                    </div>
+                </div>
+                
+                <div class="flex gap-4">
+                    <button class="flex items-center gap-2 bg-gray-800 text-gray-500 px-6 py-3 rounded-lg font-semibold cursor-not-allowed">
+                        <i class="fab fa-github"></i> Private Code
+                    </button>
+                    </div>
             </div>
         </div>
-    </div>-->
 
     <!-- Separador de sección -->
     <div class="section-divider h-px"></div>
