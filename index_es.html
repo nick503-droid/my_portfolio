@@ -234,6 +234,31 @@
                     </div>
                 </div>
 
+
+                <!-- Proyecto 4 -->
+                <div class="project-card rounded-lg overflow-hidden cursor-pointer" 
+                    onclick="openModal('modal3')">
+                    <img src="./images/In progress.png" alt="Sistema de Reciclaje" 
+                        class="w-full h-48 object-cover">
+                    
+                    <div class="p-4 md:p-6">
+                        <h3 class="text-lg md:text-xl font-bold mb-2">ERP de Gestión Gastronómica</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Sistema de gestión integral Full-Stack para la automatización operativa y financiera de restaurantes.
+                             Maneja control de salón interactivo, comandas en tiempo real, administración de recetas y alertas críticas de stock en almacén.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">React</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">NestJS</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">PostgreSQL</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">Tailwind CSS v4</span>
+                        </div>
+                        
+                        <p class="text-gray-500 text-sm">Ver detalles</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -414,6 +439,66 @@
                     <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Vuetify</span>
                     <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Railway</span>
                     <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Axios</span>
+                </div>
+            </div>
+            
+            <div class="flex gap-4">
+                <button class="flex items-center gap-2 bg-gray-800 text-gray-500 px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold cursor-not-allowed text-sm md:text-base">
+                    <i class="fab fa-github"></i> Código Privado
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Proyecto 4 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content p-6 md:p-8">
+            <div class="flex justify-between items-start mb-6">
+                <h2 class="text-2xl md:text-3xl font-bold">ERP de Gestión Gastronómica</h2>
+                <button onclick="closeModal('modal3')" class="text-gray-400 hover:text-white text-2xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <img src="./images/In progress.png" alt="Dashboard del ERP de Gestión Gastronómica" 
+                class="w-full rounded-lg mb-6">
+            
+            <div class="mb-6">
+                <span class="inline-block bg-blue-900 text-blue-200 px-4 py-2 rounded-lg font-semibold text-sm md:text-base">
+                    Proyecto Freelance
+                </span>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="text-lg md:text-xl font-semibold mb-3">Descripción del Proyecto</h3>
+                <p class="text-gray-300 leading-relaxed text-sm md:text-base">
+                    Diseñé y construí una solución ERP personalizada de extremo a extremo para optimizar la logística interna de restaurantes de alta demanda.
+                     El sistema unifica la experiencia operativa sustituyendo comandas en papel por un mapa de salón reactivo
+                      y automatiza el control de inventarios vinculando los platos vendidos directamente con las existencias de insumos en la cocina.
+                </p>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="text-lg md:text-xl font-semibold mb-3">Contribuciones Clave</h3>
+                <ul class="list-disc list-inside text-gray-300 space-y-2 text-sm md:text-base">
+                    <li>Arquitectura de una API REST robusta y modular utilizando <strong>NestJS</strong> y un frontend táctil de alto rendimiento con <strong>React</strong>.</li>
+                    <li>Modelado de datos relacionales con PostgreSQL y Prisma 6 ORM, implementando transacciones ACID para garantizar la consistencia en la creación de órdenes concurrentes.</li>
+                    <li>Ingeniería del algoritmo de "Deducción de Insumos por Receta" para restar automáticamente cantidades del stock de materia prima al despachar comensales.</li>
+                    <li>Implementación de un sistema de alertas visuales en tiempo real basado en el stock mínimo permitido para evitar el desabastecimiento en la cocina.</li>
+                    <li>Control dinámico de estados de salón (Disponible, Ocupado, Reservado) sincronizado al instante mediante peticiones asíncronas optimizadas con Axios.</li>
+                </ul>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="text-lg md:text-xl font-semibold mb-3">Tecnologías Utilizadas</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">React</span>
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">NestJS</span>
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">PostgreSQL</span>
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Prisma</span>
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Tailwind CSS</span>
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Axios</span>
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">TypeScript</span>
                 </div>
             </div>
             

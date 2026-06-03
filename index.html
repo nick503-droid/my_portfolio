@@ -235,9 +235,37 @@
                     </div>
                 </div>
 
+
+                <!-- Project 4 -->
+                <div class="project-card rounded-lg overflow-hidden cursor-pointer" 
+                    onclick="openModal('modal3')">
+                    <img src="./images/In progress.png" alt="Restaurant Management System" 
+                        class="w-full h-48 object-cover">
+                    
+                    <div class="p-4 md:p-6">
+                        <h3 class="text-lg md:text-xl font-bold mb-2">Culinary Management ERP</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Comprehensive Full-Stack management system for restaurant operational and financial automation. 
+                            Handles interactive floor plans, real-time order tracking, recipe management, and critical inventory stock alerts.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">React</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">NestJS</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">PostgreSQL</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">Tailwind CSS v4</span>
+                        </div>
+                        
+                        <p class="text-gray-500 text-sm">View details</p>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
+
+    
 
     <!-- Modales para cada proyecto -->
     
@@ -425,6 +453,66 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal Project 4 -->
+<div id="modal3" class="modal">
+    <div class="modal-content p-6 md:p-8">
+        <div class="flex justify-between items-start mb-6">
+            <h2 class="text-2xl md:text-3xl font-bold">Culinary Management ERP</h2>
+            <button onclick="closeModal('modal3')" class="text-gray-400 hover:text-white text-2xl">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <img src="" alt="Culinary Management ERP Dashboard" 
+            class="w-full rounded-lg mb-6">
+        
+        <div class="mb-6">
+            <span class="inline-block bg-blue-900 text-blue-200 px-4 py-2 rounded-lg font-semibold text-sm md:text-base">
+                Freelance Project
+            </span>
+        </div>
+        
+        <div class="mb-6">
+            <h3 class="text-lg md:text-xl font-semibold mb-3">Project Description</h3>
+            <p class="text-gray-300 leading-relaxed text-sm md:text-base">
+                Designed and built an end-to-end custom ERP solution to optimize internal logistics for high-demand restaurants. 
+                The system unifies the operational experience by replacing paper tickets with a reactive floor plan map 
+                and automates inventory control by linking dishes sold directly to kitchen stock availability.
+            </p>
+        </div>
+        
+        <div class="mb-6">
+            <h3 class="text-lg md:text-xl font-semibold mb-3">Key Contributions</h3>
+            <ul class="list-disc list-inside text-gray-300 space-y-2 text-sm md:text-base">
+                <li>Architected a robust, modular REST API using <strong>NestJS</strong> and a high-performance, touch-optimized frontend with <strong>React</strong>.</li>
+                <li>Modeled relational data with PostgreSQL and Prisma 6 ORM, implementing ACID transactions to guarantee data consistency during concurrent order creation.</li>
+                <li>Engineered a "Deduction of Ingredients by Recipe" algorithm to automatically subtract raw material quantities from stock upon serving guests.</li>
+                <li>Implemented a real-time visual alert system based on minimum allowed stock levels to prevent inventory depletion in the kitchen.</li>
+                <li>Developed a dynamic dining room status tracking system (Available, Occupied, Reserved) instantly synchronized via optimized asynchronous Axios requests.</li>
+            </ul>
+        </div>
+        
+        <div class="mb-6">
+            <h3 class="text-lg md:text-xl font-semibold mb-3">Technologies Used</h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">React</span>
+                <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">NestJS</span>
+                <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">PostgreSQL</span>
+                <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Prisma</span>
+                <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Tailwind CSS</span>
+                <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Axios</span>
+                <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">TypeScript</span>
+            </div>
+        </div>
+        
+        <div class="flex gap-4">
+            <button class="flex items-center gap-2 bg-gray-800 text-gray-500 px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold cursor-not-allowed text-sm md:text-base">
+                <i class="fab fa-github"></i> Private Code
+            </button>
+        </div>
+    </div>
+</div>
 
     <!-- Separador de sección -->
     <div class="section-divider h-px"></div>
