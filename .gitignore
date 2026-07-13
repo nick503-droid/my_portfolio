@@ -1,0 +1,47 @@
+# ===========================
+# Node / NPM
+# ===========================
+node_modules/
+package-lock.json
+
+# ===========================
+# Astro / Lunar-Light (tema no usado en el portfolio)
+# ===========================
+lunar-light/
+astro.config.mjs
+package.json
+
+# ===========================
+# Build output
+# ===========================
+dist/
+.astro/
+
+# ===========================
+# Logs
+# ===========================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===========================
+# Variables de entorno
+# ===========================
+.env
+.env.*
+!.env.example
+
+# ===========================
+# Sistema operativo
+# ===========================
+.DS_Store
+Thumbs.db
+
+# ===========================
+# Editores
+# ===========================
+.vscode/
+.idea/
+*.suo
+*.user

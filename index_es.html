@@ -235,24 +235,46 @@
                 </div>
 
 
-                <!-- Proyecto 4 -->
+                <!-- Proyecto 4: Enterprise WFM & Time Tracker -->
                 <div class="project-card rounded-lg overflow-hidden cursor-pointer" 
-                    onclick="openModal('modal3')">
-                    <img src="./images/In progress.png" alt="Sistema de Reciclaje" 
+                    onclick="openModal('modal4')">
+                    <img src="./images/Time_tracker.png" alt="Enterprise WFM & Time Tracker" 
                         class="w-full h-48 object-cover">
                     
                     <div class="p-4 md:p-6">
-                        <h3 class="text-lg md:text-xl font-bold mb-2">ERP de Gestión Gastronómica</h3>
+                        <h3 class="text-lg md:text-xl font-bold mb-2">Enterprise WFM & Time Tracker</h3>
                         <p class="text-gray-400 text-sm mb-4">
-                            Sistema de gestión integral Full-Stack para la automatización operativa y financiera de restaurantes.
-                             Maneja control de salón interactivo, comandas en tiempo real, administración de recetas y alertas críticas de stock en almacén.
+                            Plataforma robusta de gestión de fuerza laboral construida con Laravel, con auditoría automatizada de turnos, protecciones de concurrencia en base de datos y reportes de nómina precisos.
                         </p>
                         
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">React</span>
-                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">NestJS</span>
-                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">PostgreSQL</span>
-                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">Tailwind CSS v4</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">Laravel</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">PHP</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">MySQL</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">PHPUnit</span>
+                        </div>
+                        
+                        <p class="text-gray-500 text-sm">Ver detalles</p>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5: LifeOS Daily Planner -->
+                <div class="project-card rounded-lg overflow-hidden cursor-pointer" 
+                    onclick="openModal('modal5')">
+                    <img src="./images/Daily_Habits.png" alt="LifeOS Daily Planner" 
+                        class="w-full h-48 object-cover">
+                    
+                    <div class="p-4 md:p-6">
+                        <h3 class="text-lg md:text-xl font-bold mb-2">LifeOS Daily Planner</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Planificador diario y rastreador de hábitos mobile-first construido con Vue 3 y TypeScript, con arquitectura local-first para rendimiento offline y bloques de tiempo interactivos.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">Vue.js</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">Pinia</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">Dexie.js</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full">Tailwind CSS</span>
                         </div>
                         
                         <p class="text-gray-500 text-sm">Ver detalles</p>
@@ -450,62 +472,120 @@
         </div>
     </div>
 
-    <!-- Modal Proyecto 4 -->
-    <div id="modal3" class="modal">
+    <!-- Modal Proyecto 4: Enterprise WFM & Time Tracker -->
+    <div id="modal4" class="modal">
         <div class="modal-content p-6 md:p-8">
             <div class="flex justify-between items-start mb-6">
-                <h2 class="text-2xl md:text-3xl font-bold">ERP de Gestión Gastronómica</h2>
-                <button onclick="closeModal('modal3')" class="text-gray-400 hover:text-white text-2xl">
+                <h2 class="text-2xl md:text-3xl font-bold">Enterprise WFM & Time Tracker</h2>
+                <button onclick="closeModal('modal4')" class="text-gray-400 hover:text-white text-2xl">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
             
-            <img src="./images/In progress.png" alt="Dashboard del ERP de Gestión Gastronómica" 
+            <img src="./images/Time_tracker.png" alt="Dashboard Enterprise WFM & Time Tracker" 
                 class="w-full rounded-lg mb-6">
             
             <div class="mb-6">
-                <span class="inline-block bg-blue-900 text-blue-200 px-4 py-2 rounded-lg font-semibold text-sm md:text-base">
-                    Proyecto Freelance
+                <span class="inline-block bg-green-900 text-green-200 px-4 py-2 rounded-lg font-semibold text-sm md:text-base">
+                    Proyecto Personal
                 </span>
             </div>
             
             <div class="mb-6">
                 <h3 class="text-lg md:text-xl font-semibold mb-3">Descripción del Proyecto</h3>
                 <p class="text-gray-300 leading-relaxed text-sm md:text-base">
-                    Diseñé y construí una solución ERP personalizada de extremo a extremo para optimizar la logística interna de restaurantes de alta demanda.
-                     El sistema unifica la experiencia operativa sustituyendo comandas en papel por un mapa de salón reactivo
-                      y automatiza el control de inventarios vinculando los platos vendidos directamente con las existencias de insumos en la cocina.
+                    Construí una plataforma escalable de Gestión de Fuerza Laboral y Control de Tiempo diseñada para automatizar la asistencia de empleados y los cálculos de nómina. El sistema maneja escenarios operativos complejos, incluyendo turnos nocturnos que cruzan la medianoche, cambios de estado de alta concurrencia y sanitización automática de datos, garantizando cero margen de error para los departamentos de RRHH y Contabilidad.
                 </p>
             </div>
             
             <div class="mb-6">
-                <h3 class="text-lg md:text-xl font-semibold mb-3">Contribuciones Clave</h3>
+                <h3 class="text-lg md:text-xl font-semibold mb-3">Mis Acciones y Responsabilidades</h3>
                 <ul class="list-disc list-inside text-gray-300 space-y-2 text-sm md:text-base">
-                    <li>Arquitectura de una API REST robusta y modular utilizando <strong>NestJS</strong> y un frontend táctil de alto rendimiento con <strong>React</strong>.</li>
-                    <li>Modelado de datos relacionales con PostgreSQL y Prisma 6 ORM, implementando transacciones ACID para garantizar la consistencia en la creación de órdenes concurrentes.</li>
-                    <li>Ingeniería del algoritmo de "Deducción de Insumos por Receta" para restar automáticamente cantidades del stock de materia prima al despachar comensales.</li>
-                    <li>Implementación de un sistema de alertas visuales en tiempo real basado en el stock mínimo permitido para evitar el desabastecimiento en la cocina.</li>
-                    <li>Control dinámico de estados de salón (Disponible, Ocupado, Reservado) sincronizado al instante mediante peticiones asíncronas optimizadas con Axios.</li>
+                    <li>Ingeniería de protecciones de alta concurrencia en base de datos mediante bloqueo pesimista (lockForUpdate) y transacciones para prevenir condiciones de carrera en interacciones simultáneas.</li>
+                    <li>Desarrollo de rutinas de mantenimiento autónomas en el servidor (Cron Jobs) para auditar y cerrar dinámicamente turnos "zombie" abandonados según límites máximos de horas.</li>
+                    <li>Implementación de arquitecturas de exportación de datos eficientes en memoria mediante chunking de consultas para generar reportes CSV de nómina sin exceder límites de RAM.</li>
+                    <li>Diseño de lógica temporal avanzada para calcular con precisión duraciones de trabajo activo, resolviendo automáticamente turnos nocturnos de varios días y transformando registros de tiempo en formatos decimales para cálculos financieros directos.</li>
+                    <li>Arquitectura de una suite de pruebas automatizadas con PHPUnit para validar casos extremos, control de acceso basado en roles y precisión matemática, garantizando estabilidad lista para producción.</li>
                 </ul>
             </div>
             
             <div class="mb-6">
                 <h3 class="text-lg md:text-xl font-semibold mb-3">Tecnologías Utilizadas</h3>
                 <div class="flex flex-wrap gap-2">
-                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">React</span>
-                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">NestJS</span>
-                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">PostgreSQL</span>
-                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Prisma</span>
-                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Tailwind CSS</span>
-                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Axios</span>
-                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">TypeScript</span>
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Laravel</span>
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">PHP</span>
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">MySQL</span>
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">PHPUnit</span>
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Blade</span>
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Task Scheduling</span>
                 </div>
             </div>
             
             <div class="flex gap-4">
-                <button class="flex items-center gap-2 bg-gray-800 text-gray-500 px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold cursor-not-allowed text-sm md:text-base">
-                    <i class="fab fa-github"></i> Código Privado
+                <a href="https://github.com/nick503-droid/time-tracker" target="_blank"
+                   class="flex items-center gap-2 bg-white text-black px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-gray-200 transition text-sm md:text-base">
+                    <i class="fab fa-github"></i> Ver Código
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Proyecto 5: LifeOS Daily Planner -->
+    <div id="modal5" class="modal">
+        <div class="modal-content p-6 md:p-8">
+            <div class="flex justify-between items-start mb-6">
+                <h2 class="text-2xl md:text-3xl font-bold">LifeOS Daily Planner</h2>
+                <button onclick="closeModal('modal5')" class="text-gray-400 hover:text-white text-2xl">
+                    <i class="fas fa-times"></i>
                 </button>
+            </div>
+            
+            <img src="./images/Daily_Habits.png" alt="Dashboard LifeOS Daily Planner" 
+                class="w-full rounded-lg mb-6">
+            
+            <div class="mb-6">
+                <span class="inline-block bg-green-900 text-green-200 px-4 py-2 rounded-lg font-semibold text-sm md:text-base">
+                    Proyecto Personal
+                </span>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="text-lg md:text-xl font-semibold mb-3">Descripción del Proyecto</h3>
+                <p class="text-gray-300 leading-relaxed text-sm md:text-base">
+                    Construí un planificador diario y rastreador de hábitos local-first integral diseñado como una Single Page Application (SPA) optimizada para móviles. El sistema permite a los usuarios estructurar sus rutinas mediante una línea de tiempo horaria dinámica, calculando de forma persistente métricas de gamificación, registros de rendimiento de hábitos e historial de completaciones, todo del lado del cliente.
+                </p>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="text-lg md:text-xl font-semibold mb-3">Mis Acciones y Responsabilidades</h3>
+                <ul class="list-disc list-inside text-gray-300 space-y-2 text-sm md:text-base">
+                    <li>Diseño e ingeniería de una cuadrícula horaria pixel-perfecta utilizando límites de layout absoluto para slots de hábitos interactivos bloqueados por tiempo.</li>
+                    <li>Implementación de una capa de base de datos local de alto rendimiento usando Dexie.js sobre IndexedDB para garantizar persistencia de datos con latencia cero y ejecución offline robusta.</li>
+                    <li>Desarrollo de lógica de seguimiento orientada por estado con Pinia para sincronizar dinámicamente configuraciones de hábitos (paletas de colores personalizadas, programación) en la capa de presentación.</li>
+                    <li>Ingeniería de algoritmos estadísticos en tiempo real con Day.js para calcular métricas de comportamiento, rachas actuales/mejores de completación y registros de historial temporal.</li>
+                    <li>Configuración y empaquetado del frontend reactivo con Capacitor para compilar exitosamente el build web en un APK nativo de Android de alta fidelidad.</li>
+                </ul>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="text-lg md:text-xl font-semibold mb-3">Tecnologías Utilizadas</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Vue.js</span>
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Vue Router</span>
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Pinia</span>
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Dexie.js</span>
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">TypeScript</span>
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Tailwind CSS</span>
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Capacitor</span>
+                    <span class="px-3 md:px-4 py-2 bg-gray-800 rounded-lg text-sm md:text-base">Day.js</span>
+                </div>
+            </div>
+            
+            <div class="flex gap-4">
+                <a href="https://github.com/nick503-droid/Daily_Planner" target="_blank"
+                   class="flex items-center gap-2 bg-white text-black px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-gray-200 transition text-sm md:text-base">
+                    <i class="fab fa-github"></i> Ver Código
+                </a>
             </div>
         </div>
     </div>
@@ -529,7 +609,6 @@
                             <i class="fab fa-php text-3xl md:text-4xl text-gray-300"></i>
                         </div>
                         <p class="font-semibold mb-1 text-sm md:text-base">PHP</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Intermedio</p>
                     </div>
                     
                     <div class="flex flex-col items-center">
@@ -537,7 +616,6 @@
                             <i class="fab fa-js text-3xl md:text-4xl text-gray-300"></i>
                         </div>
                         <p class="font-semibold mb-1 text-sm md:text-base">JavaScript</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Intermedio</p>
                     </div>
                     
                     <div class="flex flex-col items-center">
@@ -545,7 +623,6 @@
                             <i class="fab fa-python text-3xl md:text-4xl text-gray-300"></i>
                         </div>
                         <p class="font-semibold mb-1 text-sm md:text-base">Python</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Básico</p>
                     </div>
                     
                     <div class="flex flex-col items-center">
@@ -553,7 +630,6 @@
                             <i class="fas fa-database text-3xl md:text-4xl text-gray-300"></i>
                         </div>
                         <p class="font-semibold mb-1 text-sm md:text-base">SQL</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Intermedio</p>
                     </div>
                     
                 </div>
@@ -569,7 +645,6 @@
                             <i class="fab fa-laravel text-3xl md:text-4xl text-gray-300"></i>
                         </div>
                         <p class="font-semibold mb-1 text-sm md:text-base">Laravel</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Intermedio</p>
                     </div>
                     
                     <div class="flex flex-col items-center">
@@ -577,7 +652,6 @@
                             <i class="fab fa-node text-3xl md:text-4xl text-gray-300"></i>
                         </div>
                         <p class="font-semibold mb-1 text-sm md:text-base">Node.js</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Básico</p>
                     </div>
                     
                     <div class="flex flex-col items-center">
@@ -585,7 +659,6 @@
                             <i class="fab fa-bootstrap text-3xl md:text-4xl text-gray-300"></i>
                         </div>
                         <p class="font-semibold mb-1 text-sm md:text-base">Bootstrap</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Intermedio</p>
                     </div>
                     
                     <div class="flex flex-col items-center">
@@ -593,7 +666,6 @@
                             <i class="fas fa-wind text-3xl md:text-4xl text-gray-300"></i>
                         </div>
                         <p class="font-semibold mb-1 text-sm md:text-base">Tailwind CSS</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Intermedio</p>
                     </div>
                     
                     <div class="flex flex-col items-center">
@@ -601,7 +673,6 @@
                             <i class="fab fa-vuejs text-3xl md:text-4xl text-gray-300"></i>
                         </div>
                         <p class="font-semibold mb-1 text-sm md:text-base">Vue.js</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Intermedio</p>
                     </div>
 
                     <div class="flex flex-col items-center">
@@ -609,7 +680,6 @@
                             <img src="https://cdn.simpleicons.org/nestjs/D1D5DB" alt="Logo NestJS" class="w-8 h-8 md:w-10 md:h-10">
                         </div>
                         <p class="font-semibold mb-1 text-sm md:text-base">Nest.js</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Intermedio</p>
                     </div>
 
                     <div class="flex flex-col items-center">
@@ -617,7 +687,6 @@
                             <i class="fab fa-react text-3xl md:text-4xl text-gray-300"></i>
                         </div>
                         <p class="font-semibold mb-1 text-sm md:text-base">React</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Intermedio</p>
                     </div>
                     
                 </div>
@@ -633,7 +702,6 @@
                             <i class="fas fa-database text-3xl md:text-4xl text-gray-300"></i>
                         </div>
                         <p class="font-semibold mb-1 text-sm md:text-base">MySQL</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Intermedio</p>
                     </div>
                     
                     <div class="flex flex-col items-center">
@@ -641,7 +709,6 @@
                             <i class="fas fa-database text-3xl md:text-4xl text-gray-300"></i>
                         </div>
                         <p class="font-semibold mb-1 text-sm md:text-base">SQL Server</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Intermedio</p>
                     </div>
                     
                     <div class="flex flex-col items-center">
@@ -649,7 +716,13 @@
                             <i class="fas fa-leaf text-3xl md:text-4xl text-gray-300"></i>
                         </div>
                         <p class="font-semibold mb-1 text-sm md:text-base">MongoDB</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Básico</p>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <div class="tech-icon mb-4">
+                            <img src="https://cdn.simpleicons.org/supabase/D1D5DB" alt="Logo Supabase" class="w-8 h-8 md:w-10 md:h-10">
+                        </div>
+                        <p class="font-semibold mb-1 text-sm md:text-base">Supabase</p>
                     </div>
                     
                 </div>
@@ -665,7 +738,6 @@
                             <i class="fab fa-git-alt text-3xl md:text-4xl text-gray-300"></i>
                         </div>
                         <p class="font-semibold mb-1 text-sm md:text-base">Git</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Avanzado</p>
                     </div>
                     
                     <div class="flex flex-col items-center">
@@ -673,7 +745,6 @@
                             <i class="fab fa-github text-3xl md:text-4xl text-gray-300"></i>
                         </div>
                         <p class="font-semibold mb-1 text-sm md:text-base">GitHub</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Avanzado</p>
                     </div>
                     
                     <div class="flex flex-col items-center">
@@ -681,7 +752,6 @@
                             <i class="fab fa-linux text-3xl md:text-4xl text-gray-300"></i>
                         </div>
                         <p class="font-semibold mb-1 text-sm md:text-base">Linux</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Intermedio</p>
                     </div>
                     
                     <div class="flex flex-col items-center">
@@ -689,7 +759,6 @@
                             <i class="fas fa-code text-3xl md:text-4xl text-gray-300"></i>
                         </div>
                         <p class="font-semibold mb-1 text-sm md:text-base">VS Code</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Avanzado</p>
                     </div>
                     
                     <div class="flex flex-col items-center">
@@ -697,7 +766,6 @@
                             <i class="fas fa-terminal text-3xl md:text-4xl text-gray-300"></i>
                         </div>
                         <p class="font-semibold mb-1 text-sm md:text-base">Terminal</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Intermedio</p>
                     </div>
                     
                 </div>
@@ -850,6 +918,85 @@
                             <p class="text-gray-500 text-xs mb-4">2025</p>
                             
                             <a href="https://www.udemy.com/certificate/UC-5816b05b-e471-4893-b8f2-e8a798d389e9/" target="_blank" 
+                               class="inline-flex items-center gap-2 text-xs md:text-sm text-blue-400 hover:text-blue-300 transition">
+                                <i class="fas fa-external-link-alt"></i>
+                                Ver Certificado
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certificación 5: Curso de Supabase Avanzado -->
+                <div class="bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-lg p-4 md:p-6">
+                    <div class="flex flex-col sm:flex-row items-start gap-4">
+                        <div class="text-white text-2xl md:text-3xl">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-base md:text-xl font-bold mb-2">Curso de Supabase Avanzado</h3>
+                            <p class="text-gray-400 text-xs md:text-sm mb-2">Platzi</p>
+                            <p class="text-gray-500 text-xs mb-4">2026</p>
+                            
+                            <a href="https://platzi.com/p/walterrd503/curso/12559-course/diploma/detalle/" target="_blank" 
+                               class="inline-flex items-center gap-2 text-xs md:text-sm text-blue-400 hover:text-blue-300 transition">
+                                <i class="fas fa-external-link-alt"></i>
+                                Ver Certificado
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificación 6: Curso de Supabase -->
+                <div class="bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-lg p-4 md:p-6">
+                    <div class="flex flex-col sm:flex-row items-start gap-4">
+                        <div class="text-white text-2xl md:text-3xl">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-base md:text-xl font-bold mb-2">Curso de Supabase</h3>
+                            <p class="text-gray-400 text-xs md:text-sm mb-2">Platzi</p>
+                            <p class="text-gray-500 text-xs mb-4">2026</p>
+                            
+                            <a href="https://platzi.com/p/walterrd503/curso/12544-course/diploma/detalle/" target="_blank" 
+                               class="inline-flex items-center gap-2 text-xs md:text-sm text-blue-400 hover:text-blue-300 transition">
+                                <i class="fas fa-external-link-alt"></i>
+                                Ver Certificado
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificación 7: Fundamentos de JavaScript -->
+                <div class="bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-lg p-4 md:p-6">
+                    <div class="flex flex-col sm:flex-row items-start gap-4">
+                        <div class="text-white text-2xl md:text-3xl">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-base md:text-xl font-bold mb-2">Curso de Fundamentos de JavaScript</h3>
+                            <p class="text-gray-400 text-xs md:text-sm mb-2">Platzi</p>
+                            <p class="text-gray-500 text-xs mb-4">2026</p>
+                            
+                            <a href="https://platzi.com/p/walterrd503/curso/10266-course/diploma/detalle/" target="_blank" 
+                               class="inline-flex items-center gap-2 text-xs md:text-sm text-blue-400 hover:text-blue-300 transition">
+                                <i class="fas fa-external-link-alt"></i>
+                                Ver Certificado
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificación 8: Backend con NestJS -->
+                <div class="bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-lg p-4 md:p-6">
+                    <div class="flex flex-col sm:flex-row items-start gap-4">
+                        <div class="text-white text-2xl md:text-3xl">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-base md:text-xl font-bold mb-2">Curso de Backend con NestJS</h3>
+                            <p class="text-gray-400 text-xs md:text-sm mb-2">Platzi</p>
+                            <p class="text-gray-500 text-xs mb-4">2026</p>
+                            
+                            <a href="https://platzi.com/p/walterrd503/curso/12215-course/diploma/detalle/" target="_blank" 
                                class="inline-flex items-center gap-2 text-xs md:text-sm text-blue-400 hover:text-blue-300 transition">
                                 <i class="fas fa-external-link-alt"></i>
                                 Ver Certificado
